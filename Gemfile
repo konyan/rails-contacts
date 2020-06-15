@@ -32,6 +32,7 @@ gem 'sassc-rails', '>= 2.1.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'kaminari'
 
 
 group :development, :test do

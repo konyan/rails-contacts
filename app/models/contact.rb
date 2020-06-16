@@ -10,8 +10,8 @@ class Contact < ApplicationRecord
   end
 
   scope :search, -> (term) do
-    where("name LIKE :term or company LIKE :term or email LIKE :term ",
-      term: "%#{term}%") if term.present?
+    where("LOWER(name) LIKE :term or LOWER(company) LIKE :term or LOWER(email) LIKE :term ",
+      term: "%#{term.downcase}%") if term.present?
   end
 
   # def self.search(term)

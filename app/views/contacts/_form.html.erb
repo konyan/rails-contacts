@@ -1,4 +1,4 @@
-<%= form_for(@contact, url: @contact.new_record? ? create_contact_path : update_contact_path(@contact)) do |f| %>
+<%= form_for(@contact) do |f| %>
 
   <div class="panel-body">
             <% if @contact.errors.any? %>

@@ -17,12 +17,12 @@
         </td>
         <td width="100" class="middle">
           <div>
-            <a href="#" class="btn btn-circle btn-default btn-xs" title="Edit">
+            <%= link_to edit_contact_path(contact), class:"btn btn-circle btn-default btn-xs", title: "Edit" do %>
               <i class="glyphicon glyphicon-edit"></i>
-            </a>
-            <a href="#" class="btn btn-circle btn-danger btn-xs" title="Edit">
+            <% end %>
+            <%= link_to edit_contact_path(contact), class:"btn btn-circle btn-danger btn-xs", title: "Delete" do %>
               <i class="glyphicon glyphicon-remove"></i>
-            </a>
+            <% end %>
           </div>
         </td>
       </tr>
